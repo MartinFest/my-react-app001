@@ -1,19 +1,9 @@
 
-const pokemonList = [
-    {
-        name: "bulbasaur22",
-        imgSrc:
-            "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
-    },
-    {
-        name: "mew",
 
-    },
-];
 
-function PokemonCard() {
+function PokemonCard({pokemon}) {
 
-    const pokemon = pokemonList[1]; 
+    // console.log(pokemon);
 
     const pokemonImg = pokemon.imgSrc === undefined ? '<p>???</p>' :  pokemon.imgSrc === '' ? '<p>???</p>' : <img src={pokemon.imgSrc} alt={pokemon.name} />;
     return (
