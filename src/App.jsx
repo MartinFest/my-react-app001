@@ -1,16 +1,10 @@
-import MainContent from "./components/content";
-import Footer from "./components/footer";
-import Logo from "./components/logo";
-import Navbar from "./components/navBar";
+import PokemonCard from "./components/PokemonCard";
 
-function App(){
+function App() {
   return (
-    <header>
-      <Logo></Logo>
-      <Navbar></Navbar>
-      <MainContent></MainContent>
-      <Footer></Footer>
-    </header>
+    <div>
+      <PokemonCard></PokemonCard>
+    </div>
   )
 }
 
