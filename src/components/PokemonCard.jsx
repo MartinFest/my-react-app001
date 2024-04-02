@@ -2,7 +2,7 @@ import PropTypes from  "prop-types"
 
 
 function PokemonCard({pokemon}) {
-    // console.log(pokemon);
+    // console.log('%c⧭ PokemonCard pokemon', 'color: #e57373', pokemon);
     const pokemonImg = pokemon.imgSrc === undefined ? '<p>???</p>' :  pokemon.imgSrc === '' ? '<p>???</p>' : <img src={pokemon.imgSrc} alt={pokemon.name} />;
     return (
         <>

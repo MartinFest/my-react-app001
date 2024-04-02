@@ -29,19 +29,15 @@ function App() {
       name: "mew",
     },
   ];
-  
+
   //création du state
   const [pokemonIndex, setPokemonIndex] = useState(0);
-  
-  const pokemonListLength = pokemonList.length;
-  // console.log('%c⧭', 'color: #e50000', pokemonListLength);
-   //fonction setter state PREVIOUS
-
+  // console.log('%c⧭ App pokemonIndex', 'color: #1d3f73', pokemonIndex);
 
   return (
     <div>
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
-      <DisplayNavbar pokemonListLength={pokemonListLength} pokemonIndex={pokemonIndex} setPokemonIndex={setPokemonIndex} />
+      <DisplayNavbar pokemonList={pokemonList} setPokemonIndex={setPokemonIndex} />
     </div>
   )
 }
