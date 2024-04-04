@@ -1,7 +1,7 @@
-//   function DisplayNavbar(pokemonIndex) {
-function DisplayNavbar({ pokemonList, setPokemonIndex }) {
+//   function Navbar(pokemonIndex) {
+function Navbar({ pokemonList, setPokemonIndex }) {
     // console.log('%c⧭ pokemonIndex', 'color: #006dcc', pokemonIndex);
-    // console.log('%c⧭ ', 'color: #731d6d', pokemonList);
+    // console.log('%c⧭ pokemonList ', 'color: #731d6d', pokemonList);
 
     return (
         <>
@@ -14,4 +14,4 @@ function DisplayNavbar({ pokemonList, setPokemonIndex }) {
     )
 }
 
-export default DisplayNavbar;
+export default Navbar;

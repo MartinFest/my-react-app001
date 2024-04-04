@@ -1,6 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import PokemonCard from "./components/PokemonCard";
-import DisplayNavbar from "./components/NavBar";
+import Navbar from "./components/NavBar";
 
 
 function App() {
@@ -30,14 +30,22 @@ function App() {
     },
   ];
 
+  useEffect(() =>{
+    alert("hello pokemon trainer :)");
+  },[]
+
+  )
   //création du state
   const [pokemonIndex, setPokemonIndex] = useState(0);
   // console.log('%c⧭ App pokemonIndex', 'color: #1d3f73', pokemonIndex);
 
+  if(pokemonIndex===3){
+    alert("pika pikachu !!!");
+  }
   return (
     <div>
       <PokemonCard pokemon={pokemonList[pokemonIndex]} />
-      <DisplayNavbar pokemonList={pokemonList} setPokemonIndex={setPokemonIndex} />
+      <Navbar pokemonList={pokemonList} setPokemonIndex={setPokemonIndex} />
     </div>
   )
 }
